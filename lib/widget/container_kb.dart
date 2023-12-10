@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:clone_bank_app/widget/container_kb.dart';
-class BanksListScreen extends StatefulWidget {
+
+class kbListScreen extends StatefulWidget {
   @override
-  _BanksListScreenState createState() => _BanksListScreenState();
+  _kbListScreenState createState() => _kbListScreenState();
 }
 
-class _BanksListScreenState extends State<BanksListScreen> {
+class _kbListScreenState extends State<kbListScreen> {
   final String accountName = '국민은행 계좌만 보기'; // 임시 계좌 이름, 서버에서 가져온 데이터로 대체 가능
 
   @override
@@ -22,20 +22,19 @@ class _BanksListScreenState extends State<BanksListScreen> {
           children: [
             SizedBox(width: 30,),
             ElevatedButton(
-              onPressed: () { Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => kbListScreen()),
-              );},
+              onPressed: () {
+                // Transfer button logic
+              },
               child: Text('국민은행계좌만 보기'),
               style: ElevatedButton.styleFrom(
-                primary: Colors.amber, // Button background color
+                primary: Colors.amber[200], // Button background color
               ),
             ),
 
           ],
         ),
         Column(
-          children: List.generate(10, (index) => bankelement(index)),
+          children: List.generate(5, (index) => bankelement(index)),
         ),
       ],
     );
@@ -43,7 +42,6 @@ class _BanksListScreenState extends State<BanksListScreen> {
 
   @override
   Widget bankelement(int index) {
-
 
     return Container(
       margin: EdgeInsets.all(10.0),
