@@ -47,8 +47,31 @@ csv파일의 데이터를 읽어오는 방식으로 사용하였습니다 .
 ## 아쉬운 점 
    프론트와 서버를 연결하는 과정에서 어려움이 있었습니다 .
    MySQL과 node js 의 연결이 익숙치 못하여 , csv파일에 있는 데이터를 node.js 에 불러오고자 하였습니다 . 
-   그래서 서버에 csv파일을 불러와 각 셀별로 데이터을
-크롬 으로 바꾸어서 실행 해주세요 ! 
+   그래서 서버에 csv파일을 불러와 각 셀별로 데이터을 읽어오는 방식을 사용하였습니다 
+    
+
+
+## 프로젝트 실행 전 필요항목
+
+1. Android Studio 설치 
+1-1 Android studio에서 flutter plugin 추가 . 
+1-2 public.yaml에 들어가서 , get pub 클릭 
+
+
+2.node.js설치 
+2-1 터미널에서
+ 터미널에서
+  ```javascript
+  npm install express
+  npm install csv-parse
+ node index.js
+```
+를 실행해 주세요 . 
+(http://localhost:3000/data) 
+
+
+**혹시 안드로이드스튜디오 AVD실행시 빈 화면이 뜬다면 , FLUTTER DEVICE SELECTION 을 크롬 로 바꾸어서 실행 해주세요 ! 
+
 
 
 
