@@ -1,5 +1,9 @@
 // lib/widget/bottom_bar.dart
 import 'package:flutter/material.dart';
+import 'package:clone_bank_app/screen/Bank_list.dart';
+import 'package:clone_bank_app/widget/container_banks.dart';
+
+
 
 class Bottom extends StatelessWidget {
   @override
@@ -11,7 +15,10 @@ class Bottom extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            TextButton.icon(onPressed:(){},
+            TextButton.icon(onPressed:(){ Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => bankslistscreen()),
+            );},
               icon: Icon(
                 Icons.shopping_bag_outlined,
                 size: 18,

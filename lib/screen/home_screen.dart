@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:clone_bank_app/model/bank_name.dart'; // Make sure this import is correct
-import 'package:clone_bank_app/widget/container.dart';
+import 'package:clone_bank_app/widget/container_functions.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -10,13 +10,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
-    super.initState();
+      super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Bank App'), // You might want to add a title

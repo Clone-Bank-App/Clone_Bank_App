@@ -2,7 +2,7 @@
 import 'package:clone_bank_app/screen/home_screen.dart';
 import 'package:clone_bank_app/widget/bottom_bar.dart';
 import 'package:flutter/material.dart';
-
+import 'package:clone_bank_app/widget/container_banks.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
