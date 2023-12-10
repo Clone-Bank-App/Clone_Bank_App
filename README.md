@@ -58,17 +58,20 @@ csv파일의 데이터를 읽어오는 방식으로 사용하였습니다 .
 1-2 public.yaml에 들어가서 , get pub 클릭 
 
 2.node.js설치 
-2-1 터미널에서
+ 터미널에서
 
   ```javascript
   npm install express
   npm install csv-parse
  node index.js
 ```
+를 실행해 주세요 . 
 
 
-(http://localhost:3000/data) 
-**혹시 안드로이드스튜디오 AVD실행시 빈 화면이 뜬다면 , 크롬 ![image](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/38944609/19750d0a-d7c4-4cd0-825b-957bd3b76239) 으로 바꾸어서 실행 해주세요 ! 
+
+
+**혹시 안드로이드스튜디오 AVD실행시 빈 화면이 뜬다면 ,
+크롬 으로 바꾸어서 실행 해주세요 ! 
 
 
 
