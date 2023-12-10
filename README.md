@@ -12,9 +12,7 @@ node.js와 MySQL을 사용하여 은행 데이터를 만들고, 서버에 연결
 ---
 
 
-<img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=html5&logoColor=white">
-
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=html5&logoColor=white">
 
 <img src="https://img.shields.io/badge/nodedotjs-339933?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=html5&logoColor=white">
 
@@ -27,13 +25,13 @@ node.js와 MySQL을 사용하여 은행 데이터를 만들고, 서버에 연결
 김혜윤
 김현지
 
+
 ## 배운점
 1. 실제 앱에서 어떤 식으로 뷰를 구현하는지
 2. 간단해보이는 기능들도 얼마나 많은 경우의 수를 고려하고 고민하여 로직을 짜야하는 지
 3. 프론트와 백이 각각 어떤 역할을 수행해야 하는 지
 4. 소통의 중요성
 
----
 
 ## 진행과정
 
@@ -42,14 +40,17 @@ node.js와 MySQL을 사용하여 은행 데이터를 만들고, 서버에 연결
   
   <img width="769" alt="스크린샷 2023-12-10 222730" src="https://github.com/Clone-Bank-App/Clone_Bank_App/assets/121094346/e1c364ce-5a8c-4661-a099-6de7d2812021">
 
-## 프로젝트 실행 전 필요항목 
-- node.js 설치
+## 실행화면
 
-## 1. Bank App
+### 1. Bank App
 ![image](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/121094346/5cfb20b2-3b8b-4944-86b8-8caa843665e7)
 
-## 2. View Accounts
+### 2. View Accounts
 ![image2](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/121094346/84448d9a-e3f4-47aa-9d5b-15c075a10fd8)
+
+
+## 프로젝트 실행 전 필요항목 
+- node.js 설치
 
 ## Getting Started
 
