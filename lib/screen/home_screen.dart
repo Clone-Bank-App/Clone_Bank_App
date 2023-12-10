@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:clone_bank_app/model/bank_name.dart'; // Make sure this import is correct
+import 'package:clone_bank_app/funcions/server.dart'; // Make sure this import is correct
 import 'package:clone_bank_app/widget/container_functions.dart';
+import 'package:clone_bank_app/funcions/server.dart';
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -8,15 +10,30 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  String accountName = 'Loading...'; // 초기값 설정
+
   @override
   void initState() {
-      super.initState();
+    super.initState();
+    _loadDataFromServer();
+  }
+
+  Future<void> _loadDataFromServer() async {
+    try {
+      var data = await getDataFromBackend();
+      setState(() {
+        accountName =  data['firstCell']; // 예를 들어 서버로부터 받은 이름 데이터
+      });
+    } catch (e) {
+      print('Error loading data: $e');
+    }
   }
 
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
+
       appBar: AppBar(
         title: Text('Bank App'), // You might want to add a title
       ),
@@ -30,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   // Add your logic here
                 },
                 child: Text(
-                  '김혜윤',
+                  accountName,
                   style: TextStyle(color: Colors.black),
                 ), // Replace with actual child widget
               ),
@@ -54,59 +71,38 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Flexible(
-
-                      flex: 1, // Image에 할당된 공간의 비율
-                      child: Image.asset('assets/images/KB_logo.png'),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Card(
+                    child: Column(
+                      children: [
+                        ListTile(
+                          leading: Image.asset('assets/images/KB_logo.png'), // Replace with your asset
+                          title: Text('일반보통예금'),
+                          subtitle: Text('024-801-044-25101'),
+                        ),
+                        Divider(),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text('0원', style: TextStyle(fontSize: 20)),
+                              ElevatedButton(
+                                onPressed: () {
+                                  // Transfer button logic
+                                },
+                                child: Text('이체'),
+                                style: ElevatedButton.styleFrom(
+                                  primary: Colors.amber, // Button background color
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
-                    Flexible(
-                      flex: 7, // Column에 할당된 공간의 비율
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          TextButton(
-                            onPressed: () {
-                              // 로직 추가
-                            },
-                            child: Text('일반보통예금'),
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              // 로직 추가
-                            },
-                            child: Text('024-801-044-25101',
-                              style: TextStyle(fontSize: 10)),
-                          ),
-                          SizedBox(height: 20),
-                          TextButton(
-                            onPressed: () {
-                              // 로직 추가
-                            },
-                            child: Text('0원',
-                            textAlign: TextAlign.start ,),
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              // 로직 추가
-                            },
-                            style: ButtonStyle(
-                              backgroundColor:
-                                  MaterialStateProperty.all(Colors.amber),
-                              minimumSize:MaterialStateProperty.all<Size>(Size(200, 40)),
-                            ),
-                            child: Text(
-                              '이체',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.black),
-                            ),
-                          ),
-                          // 다른 위젯들 추가 가능
-                        ],
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
 
                 VerticalDivider(

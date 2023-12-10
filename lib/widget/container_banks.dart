@@ -1,20 +1,42 @@
 import 'package:flutter/material.dart';
 
-class bankslistscreen extends StatefulWidget {
+class BanksListScreen extends StatefulWidget {
   @override
-  _bankslistscreenState createState() => _bankslistscreenState();
+  _BanksListScreenState createState() => _BanksListScreenState();
 }
 
-class _bankslistscreenState extends State<bankslistscreen> {
+class _BanksListScreenState extends State<BanksListScreen> {
+  final String accountName = '국민은행 계좌만 보기'; // 임시 계좌 이름, 서버에서 가져온 데이터로 대체 가능
 
+  @override
   void initState() {
-    super.initState();}
-
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: List.generate(10, (index) => bankelement(index)),
+    return ListView( // ListView 사용
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            TextButton(
+
+              onPressed: () {
+                // 로직 추가
+              },
+              child: Text(
+                accountName,
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+
+          ],
+        ),
+        Column(
+          children: List.generate(10, (index) => bankelement(index)),
+        ),
+      ],
     );
   }
 
