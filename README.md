@@ -36,10 +36,11 @@ csv파일의 데이터를 읽어오는 방식으로 사용하였습니다 .
 ## 실행화면
 
 ### 1. Bank App
-![image](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/121094346/5cfb20b2-3b8b-4944-86b8-8caa843665e7)
+![HOME](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/38944609/671c5dc9-0ad0-4e1f-9de0-ce1ae4021d0b)
+
 
 ### 2. View Accounts
-![image2](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/121094346/84448d9a-e3f4-47aa-9d5b-15c075a10fd8)
+![LIST](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/38944609/e7cfbbe8-c057-4bda-9103-c351f181f5cb)
 
 
 
