@@ -37,14 +37,10 @@ Future<Map<String, dynamic>> getDataFromBackend() async {
       // Assuming the JSON response is something like:
       // { "name": "John Doe", "accountNumber": 123456 }
 
-      String name = data['USERID'];
-      int accountNumber = data['accountNumber'];
+      return data['firstCell'];
 
       // Return the name and account number
-      return {
-        'name': name,
-        'accountNumber': accountNumber,
-      };
+
     } else {
       // If the server did not return a 200 OK response, then throw an exception.
       throw Exception('Failed to load data from the backend. Status code: ${response.statusCode}');
