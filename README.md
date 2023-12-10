@@ -17,7 +17,7 @@ csv파일의 데이터를 읽어오는 방식으로 사용하였습니다 .
 ---
 
 
-<img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=html5&logoColor=white">
 
 <img src="https://img.shields.io/badge/nodedotjs-339933?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=html5&logoColor=white">
 
@@ -43,7 +43,7 @@ csv파일의 데이터를 읽어오는 방식으로 사용하였습니다 .
 
 
 
-## 구현하지 못한 점
+## 아쉬운 점 
    프론트와 서버를 연결하는 과정에서 어려움이 있었습니다 .
    MySQL과 node js 의 연결이 익숙치 못하여 , csv파일에 있는 데이터를 node.js 에 불러오고자 하였습니다 . 
    그래서 서버에 csv파일을 불러와 각 셀별로 데이터를 분리하는 것까지는 하였으나 , 
@@ -67,6 +67,7 @@ csv파일의 데이터를 읽어오는 방식으로 사용하였습니다 .
 
 
 (http://localhost:3000/data) 
+**혹시 안드로이드스튜디오 AVD실행시 빈 화면이 뜬다면 , 크롬 ![image](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/38944609/19750d0a-d7c4-4cd0-825b-957bd3b76239) 으로 바꾸어서 실행 해주세요 ! 
 
 
 
