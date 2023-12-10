@@ -1,20 +1,24 @@
 # clone_bank_app
 
-국민은행 안드로이드 어플 클론코딩 프로젝트 입니다.
+해당 프로젝트는 국민은행 안드로이드 어플 클론코딩 프로젝트 입니다.
 
-Flutter 오픈 소스 프레임워크를 활용하여 국민은행 스타뱅킹 어플의 디자인을 클론코딩 하는 방향으로 진행하였으며,
+##### Front-end
+Flutter 오픈 소스 프레임워크를 활용하여 국민은행 스타뱅킹 어플 기능을 클론코딩 하는 방향으로 진행하였으며,
 기능에 따라 필요한 부분들을 구현하였습니다.
 
+##### Back-end
 node.js와 MySQL을 사용하여 은행 데이터를 만들고, 서버에 연결하는 기능까지 구현해 보았습니다.
 
 ---
 
 
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/nodedotjs-339933?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=html5&logoColor=white">
 
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/selenium-43B02A?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=html5&logoColor=white">
 
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/nodedotjs-339933?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=html5&logoColor=white">
+
+<img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=html5&logoColor=white">
 
 ---
 
@@ -23,13 +27,29 @@ node.js와 MySQL을 사용하여 은행 데이터를 만들고, 서버에 연결
 김혜윤
 김현지
 
-## 기능 
-- 
--
--
+## 배운점
+1. 실제 앱에서 어떤 식으로 뷰를 구현하는지
+2. 간단해보이는 기능들도 얼마나 많은 경우의 수를 고려하고 고민하여 로직을 짜야하는 지
+3. 프론트와 백이 각각 어떤 역할을 수행해야 하는 지
+4. 소통의 중요성
+
+---
+
+## 진행과정
+
+### 협업환경 구축
+- notion을 이용하여 진행현황과 요청사항을 공유할 수 있도록 했다.
+  
+  <img width="769" alt="스크린샷 2023-12-10 222730" src="https://github.com/Clone-Bank-App/Clone_Bank_App/assets/121094346/e1c364ce-5a8c-4661-a099-6de7d2812021">
 
 ## 프로젝트 실행 전 필요항목 
-- Android Studio 설치 
+- node.js 설치
+
+## 1. Bank App
+![image](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/121094346/5cfb20b2-3b8b-4944-86b8-8caa843665e7)
+
+## 2. View Accounts
+![image2](https://github.com/Clone-Bank-App/Clone_Bank_App/assets/121094346/84448d9a-e3f4-47aa-9d5b-15c075a10fd8)
 
 ## Getting Started
 
